@@ -50,7 +50,7 @@ Create a `.env` file in the `backend/` folder:
 ```dotenv
 NEO4J_URI=bolt://localhost:7687
 NNEO4J_USER=neo4j
-NEO4J_PASS=changeme
+NEO4J_PASS=password123
 PORT=8080
 SEED_DATA=true
 ```
