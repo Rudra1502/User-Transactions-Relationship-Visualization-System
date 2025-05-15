@@ -1,0 +1,194 @@
+:root {
+  --sidebar-bg: #2f3e46;
+  --sidebar-text: #cad2c5;
+  --sidebar-hover: #354f52;
+  --main-bg: #eef5db;
+  --card-bg: #84a98c;
+  --card-text: #17252a;
+  --button-bg: #52796f;
+  --button-hover: #354f52;
+  --input-bg: #cad2c5;
+  --input-text: #17252a;
+  --list-hover-bg: #52796f;
+  --list-hover-text: #ffffff;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--main-bg);
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar-left, .sidebar-right {
+  width: 320px;
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  overflow-y: auto;
+}
+
+.sidebar-left h2, .sidebar-right h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.main {
+  flex: 1;
+  background: var(--main-bg);
+  position: relative;
+  padding: 10px;
+}
+
+.sidebar h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 5px;
+}
+
+.sidebar-right .form {
+  background: var(--card-bg);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form h3 {
+  margin-top: 0;
+  color: var(--card-text);
+}
+
+.form input {
+  width: 93%;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 4px;
+  background: var(--input-bg);
+  color: var(--input-text);
+  font-size: 0.95rem;
+}
+
+.form select {
+  width: 93%;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 4px;
+  background: var(--input-bg);
+  color: var(--input-text);
+  font-size: 0.95rem;
+}
+
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: var(--button-bg);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form button:hover {
+  background: var(--button-hover);
+}
+
+.list {
+  margin-bottom: 20px;
+}
+
+.list select {
+  width: 93%;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 4px;
+  background: var(--input-bg);
+  color: var(--input-text);
+  font-size: 0.95rem;
+}
+
+.list input {
+  width: 93%;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background: var(--input-bg);
+  color: var(--input-text);
+  font-size: 0.95rem;
+}
+
+.list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  padding: 10px;
+  margin-bottom: 6px;
+  background: var(--card-bg);
+  color: var(--card-text);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.list li:hover {
+  background: var(--list-hover-bg);
+  color: var(--list-hover-text);
+}
+
+.cy-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+  background: #ffffff;
+}
+
+.export-overlay {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  z-index: 5;
+}
+
+.export-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.export-buttons button {
+  background: var(--button-bg);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.export-buttons button:hover {
+  background: var(--button-hover);
+}
+

@@ -1,0 +1,78 @@
+# ─── Node.js ───────────────────────────────────────────────────────────────────
+# dependencies
+node_modules/
+**/node_modules/
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# runtime data
+pids
+*.pid
+*.seed  # if you use seed files at root
+
+# ─── Env files ───────────────────────────────────────────────────────────────
+# local env files
+.env
+**/.env
+
+# ─── Build outputs ────────────────────────────────────────────────────────────
+# backend build (if you compile/transpile)
+backend/dist/
+backend/build/
+
+# frontend build
+frontend/dist/
+frontend/build/
+
+# coverage and reports
+coverage/
+*.lcov
+
+# ─── OS & Editor ──────────────────────────────────────────────────────────────
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Linux
+*~
+
+# IDEs & editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ─── Docker & Compose ─────────────────────────────────────────────────────────
+# local Docker Compose override
+docker-compose.override.yml
+
+# ignore docker volumes definitions
+docker-compose.*.yml
+
+# ─── Logs & Temp ──────────────────────────────────────────────────────────────
+logs/
+*.log
+
+# ─── Miscellaneous ────────────────────────────────────────────────────────────
+# npm global installs
+npm-debug.log
+
+# Yarn integrity file
+.yarn-integrity
+
+# lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# End of .gitignore
